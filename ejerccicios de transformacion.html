@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>resol</title>
+<script>
+function resultado() {
+var p1, p2, p3, p4, nota;
+ 
+<!-- 1 pregunta -->
+if (document.getElementById('p11').checked==true) {p1=1}
+else {p1=0}
+<!-- 2 pregunta -->
+if (document.getElementById('p22').checked==true) {p2=1}
+else {p2=0}
+<!-- 3 pregunta -->
+if (document.getElementById('p33').checked==true) {p3=1}
+else {p3=0}
+<!-- 4 pregunta -->
+if (document.getElementById('p44').checked==true) {p4=1}
+else {p4=0}
+ 
+nota=p1+p2+p3+p4;
+alert(" Aciertos: " + nota);
+location.reload();
+}
+</script>
+</head>
+<body>
+<h2>Transforma las siguentes ecuaciones a su forma simetrica e indica la respuesta correcta</h2>
+<hr>
+<form style="font:normal 16px sans-serif">
+<p class="claseverde">1.-2x - 5y + 5=0</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta1" id="p11"> x/-2.5 + y/1= 1</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> x/2.5 + y/1=1</p>
+<br><br>
+ 
+<p>2.-x-3y + 8=0.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p21"> x78 + y72.3=1</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta2" id="p22"> x-8 + y/2.6=1</p>
+<br><br>
+ 
+<p>3.-2x - y =0</p>
+
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta3" id="p33"> x/0 + y/0=1</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p34"> x/0 + y/0=0</p>
+<br><br>
+ 
+
+<p>4.-1/2x + 3y +5=0</p>
+
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p43"> x/10 + y/-1.6=1</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta4" id="p44"> x/-10 + y/-1.6=1</p>
+<hr>
+<p><input type="button" value=" R E S U L T A D O " onclick="resultado()"/></p>
+</form>
+</body>
+</html>

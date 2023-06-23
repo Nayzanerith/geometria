@@ -1,0 +1,63 @@
+<html>
+<head>
+<title>Ejercicios de circunferencia</title>
+<script>
+function resultado() {
+var p1, p2, p3, p4, p5, nota;
+ 
+/* 1 pregunta */
+if (document.getElementById('p11').checked==true) {p1=1}
+else {p1=0}
+/* 2 pregunta
+if (document.getElementById('p22').checked==true) {p2=1}
+else {p2=0}
+*/
+/* 3 pregunta */
+if (document.getElementById('p33').checked==true) {p3=1}
+else {p3=0}
+/* 4 pregunta */
+if (document.getElementById('p44').checked==true) {p4=1}
+else {p4=0}
+
+if (document.getElementById('p52').checked==true) {p5=1}
+else {p5=0} 
+
+nota=p1+p3+p4+p5;
+alert(" Aciertos: " + nota);
+location.reload();
+}
+</script>
+</head>
+<body>
+<h2>Transforma las siguentes ecuaciones a su forma simetrica e indica la respuesta correcta</h2>
+<hr>
+<form style="font:normal 16px sans-serif">
+<p class="claseverde">1.Escribir la ecuación de la circunferencia de centro (1, 2) y de radio 2.</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta1" id="p11"> (x - 1)<sup>2</sup> + (y - 2)<sup>2</sup> = 2<sup>2</sup></p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> (5 + x)<sup>2</sup> + -y<sup>2</sup> = 7</p>
+<br><br>
+ 
+<p>2.¿Cuál es el radio y el centro de la siguiente circunferencia? x<sup>2</sup> + (y + 1 )<sup>2</sup> = 9</p>
+
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta3" id="p33"> El centro es el punto (0, -1) y el radio es 3.</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p34"> El centro es el punto (2, 5) y el radio es -1.</p>
+<br><br>
+ 
+
+<p>3.Escribir la ecuación del círculo cuyo borde es la circunferencia de radio 2 y centro (1, -1).</p>
+
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p43"> (-x)<sup>2</sup> + (2 + y)<sup>2</sup> = 5</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta4" id="p44"> (x - 1)<sup>2</sup> + (y + 1)<sup>2</sup> &#8805; 4</p>
+<br><br>
+
+<p>4.¿La siguiente ecuación es la ecuación de una circunferencia? x<sup>2</sup> + 2x + y<sup>2</sup> = 2 </p>
+
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta5" id="p51"> 2x<sup>2</sup> + (y + 1)<sup>2</sup> = 6</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta5" id="p52"> (x + 1)<sup>2</sup> + y<sup>2</sup> = 3</p>
+<br><br>
+
+<hr>
+<p><input type="button" value=" R E S U L T A D O " onclick="resultado()"/></p>
+</form>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>resol</title>
+<script>
+function resultado() {
+var p1, p2, p3, p4, nota;
+ 
+<!-- 1 pregunta -->
+if (document.getElementById('p11').checked==true) {p1=1}
+else {p1=0}
+<!-- 2 pregunta -->
+if (document.getElementById('p22').checked==true) {p2=1}
+else {p2=0}
+<!-- 3 pregunta -->
+if (document.getElementById('p33').checked==true) {p3=1}
+else {p3=0}
+<!-- 4 pregunta -->
+if (document.getElementById('p44').checked==true) {p4=1}
+else {p4=0}
+ 
+nota=p1+p2+p3+p4;
+alert(" Aciertos: " + nota);
+location.reload();
+}
+</script>
+</head>
+<body>
+<h2>Resuelve lo propuesto</h2>
+<hr>
+<form style="font:normal 16px sans-serif">
+<p class="claseverde">1.-.Escribir la ecuación de la recta que pasa por los puntos A (5,-2) y B (2,4)</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta1" id="p11"> y=-2x+8</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta1" id="p12"> y= -2x+10-2= -2x+8</p>
+<br><br>
+ 
+<p>2.-.Escribir la ecuación paralela a la recta y=-2x+8 y pasa por el punto (-5,1).</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta2" id="p21"> y=-2x-10+1= -2x-9</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta2" id="p22"> y=-2x+9</p>
+<br><br>
+ 
+<p>3.-Escribir la ecuación de la recta que corta en el eje de abscisas en 5 y al de ordenadas en -4.</p>
+
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta3" id="p33">y= 4/5x-4</p>
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta3" id="p34"> y= 5/5x-6</p>
+<br><br>
+ 
+
+<p>4.-Dada la recta de ecuación 2x-3y+6=0, escríbela en forma vectorial</p>
+
+<p onclick="this.style.color='#FF0000'"><input type="radio" name="pregunta4" id="p43"> (x,y)=(1,2)+t(2,2)</p>
+<p onclick="this.style.color='#00FF00'"><input type="radio" name="pregunta4" id="p44"> (x,y)=(0,2)+t(3,2)</p>
+<hr>
+<p><input type="button" value=" R E S U L T A D O " onclick="resultado()"/></p>
+</form>
+</body>
+</html>
